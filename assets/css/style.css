@@ -1087,6 +1087,9 @@ header
     .header-area .main-nav .nav li.submenu:after {
         left: 5px;
     }
+    .left-heading .section-title{
+        font-size: 24px !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -3248,3 +3251,5 @@ preloader
         transform: scale(1.2, 1);
     }
 }
+
+@media
