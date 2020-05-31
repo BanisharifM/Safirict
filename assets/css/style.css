@@ -634,7 +634,7 @@ header
 .header-area .main-nav .nav {
     float: right;
     margin-top: 27px;
-    margin-right: 80px;
+    /*margin-right: 80px;*/
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
