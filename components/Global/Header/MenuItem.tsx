@@ -1,12 +1,10 @@
 import React from "react";
+import { IMenuItem } from "../model";
 
-interface IProps {
-  to: string;
-}
-const MenuItem:React.FC<IProps> = () => {
+const MenuItem:React.FC<IMenuItem> = ({children}) => {
   return (
     <li>
-      <a href="#welcome">خانه</a>
+      <a href="#welcome">{children}</a>
     </li>
   );
 };
