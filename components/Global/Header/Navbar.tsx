@@ -1,28 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
 import UL from "../UL";
-import MenuItem from "./MenuItem";
 import MenuTrigger from "./MenuTrigger";
+import { navbarItems, renderNav } from "./navbarConfig";
 import NavbarLogo from "./NavbarLogo";
-import ParentMenuItem from "./ParentMenuItem";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleTriggerClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+  const handleResize = () => {
+    window.innerWidth > 991 ? setMenuOpen(true) : setMenuOpen(false);
+  };
+  useEffect(() => {
+    setMenuOpen(window.innerWidth > 990);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav className="main-nav">
       <NavbarLogo />
-      <UL className="nav">
-        <MenuItem to="/">خانه</MenuItem>
-        <ParentMenuItem title="خدمات">
-          <MenuItem to="/">حوزه شبکه</MenuItem>
-          <MenuItem to="/">دیگر خدمات</MenuItem>
-        </ParentMenuItem>
-        <MenuItem to="/">وبلاگ و اخبار</MenuItem>
-        <ParentMenuItem title="درباره ما">
-          <MenuItem to="/">معرفی شرکت</MenuItem>
-          <MenuItem to="/">مشتریان ما</MenuItem>
-        </ParentMenuItem>
-        <MenuItem to="/">تماس با ما</MenuItem>
-      </UL>
-      <MenuTrigger />
+      <CSSTransition
+        in={menuOpen}
+        timeout={1000}
+        classNames="nav"
+        mountOnEnter
+        unmountOnExit
+      >
+        <UL className="nav">{renderNav(navbarItems)}</UL>
+      </CSSTransition>
+      <MenuTrigger active={menuOpen} onClick={handleTriggerClick} />
     </nav>
   );
 };

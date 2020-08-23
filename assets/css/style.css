@@ -1121,11 +1121,13 @@ header
     float: none;
     width: 100%;
     margin-top: 80px !important;
-    display: none;
+    /* opacity: 0; */
+    /* max-height: 0; */
+    /* display: none;
     -webkit-transition: all 0s ease 0s;
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
+    transition: all 0s ease 0s; */
     margin-right: 0px;
   }
   .header-area .main-nav .nav li {

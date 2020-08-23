@@ -1,7 +1,7 @@
 import React from "react";
-import { IMenuItem } from "../model";
+import { IMenuProps } from "../models";
 
-const MenuItem:React.FC<IMenuItem> = ({children}) => {
+const MenuItem: React.FC<IMenuProps> = ({ children }) => {
   return (
     <li>
       <a href="#welcome">{children}</a>

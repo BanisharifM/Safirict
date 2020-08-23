@@ -1,6 +1,6 @@
-import { IMenuItem } from "../model";
+import { IMenuProps } from "../models";
 
-const NavItem: React.FC<IMenuItem> = ({ to, children }) => {
+const NavItem: React.FC<IMenuProps> = ({ to, children }) => {
   return (
     <li>
       <a href={to}>
