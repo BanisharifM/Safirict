@@ -1,6 +1,6 @@
 import ContactForm from "components/contact-us/ContactForm";
 import ContactInfo from "components/contact-us/ContactInfo";
-import BreadCrumbs from "components/news/BreadCrumbs";
+import BreadCrumbs from "components/Global/BreadCrumbs";
 import dynamic from "next/dynamic";
 const ContactMap = dynamic(() => import("components/contact-us/ContactMap"), {
   ssr: false,

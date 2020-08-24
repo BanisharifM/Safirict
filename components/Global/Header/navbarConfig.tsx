@@ -21,25 +21,25 @@ export const navbarItems: IMenuItem[] = [
     ],
   },
   {
-    title: "وبلاگ و اخبار",
-    path: "/",
+    title: "اخبار",
+    path: "/news",
   },
   {
     title: "درباره ما",
     items: [
       {
         title: "معرفی شرکت",
-        path: "/",
+        path: "/about",
       },
       {
         title: "مشتریان ما",
-        path: "/",
+        path: "/customers",
       },
     ],
   },
   {
     title: "تماس با ما",
-    path: "/",
+    path: "/contact-us",
   },
 ];
 

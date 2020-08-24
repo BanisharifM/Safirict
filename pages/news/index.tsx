@@ -1,4 +1,4 @@
-import BreadCrumbs from "components/news/BreadCrumbs";
+import BreadCrumbs from "components/Global/BreadCrumbs";
 import CardNews, { INews } from "components/news/CardNews";
 import SearchWidget from "components/news/SearchWidget";
 

@@ -2575,7 +2575,7 @@ pages
 
 .page .cover .page-top .breadcrumb li:after {
   font-family: FontAwesome;
-  content: "\f105";
+  content: "\f104";
   margin-right: 10px;
   color: #e5e9f7;
 }
