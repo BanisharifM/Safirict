@@ -1,4 +1,5 @@
 @import "./bootstrap-rtl.min.css";
 @import "./style.css";
 @import "./font-awesome.min.css";
-@import "./transitions.css"
+@import "./transitions.css";
+@import "extra.css";

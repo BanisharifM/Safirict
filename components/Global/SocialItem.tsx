@@ -1,13 +1,10 @@
 import React from "react";
+import { ISocial } from "./models";
 
-interface IProps {
-  to: string;
-  icon: string;
-}
-const SocialItem: React.FC<IProps> = ({ to, icon }) => {
+const SocialItem: React.FC<ISocial> = ({ href, icon }) => {
   return (
     <li>
-      <a href={to}>
+      <a href={href}>
         <i className={icon}></i>
       </a>
     </li>

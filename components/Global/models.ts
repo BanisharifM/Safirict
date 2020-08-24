@@ -10,3 +10,8 @@ export interface IParentProps {
 export interface IMenuProps {
   to: string;
 }
+export interface ISocial {
+  icon: string;
+  href :string
+}
+

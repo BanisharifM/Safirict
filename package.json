@@ -8,19 +8,27 @@
     "start": "next start"
   },
   "dependencies": {
+    "@hookform/resolvers": "^0.1.0",
     "@types/classnames": "^2.2.10",
     "classnames": "^2.2.6",
+    "leaflet": "^1.6.0",
     "next": "9.5.2",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-hook-form": "^6.5.1",
+    "react-leaflet": "^2.7.0",
+    "react-leaflet-universal": "^2.2.1",
     "react-parallax": "^3.0.3",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "yup": "^0.29.3"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.5.17",
     "@types/node": "^14.6.0",
     "@types/react": "^16.9.46",
     "@types/react-transition-group": "^4.4.0",
+    "@types/yup": "^0.29.6",
     "typescript": "^4.0.2"
   }
 }
