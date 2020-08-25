@@ -1,6 +1,5 @@
 import BreadCrumbs from "components/Global/BreadCrumbs";
 import CardNews, { INews } from "components/news/CardNews";
-import SearchWidget from "components/news/SearchWidget";
 
 const fakeNews: INews[] = [
   {
@@ -42,12 +41,14 @@ export default function News() {
       <div className="page-bottom">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-12 col-sm-12">
+            <div
+              /*className="col-lg-8 col-md-12 col-sm-12" */ className="col-12"
+            >
               <div className="blog-list">
                 <div className="row">
                   {fakeNews.map((item, index) => {
                     return (
-                      <div key={index} className="col-lg-6 col-md-6 col-sm-12">
+                      <div key={index} className="col-lg-4 col-md-6 col-sm-12">
                         <CardNews {...item} />
                       </div>
                     );
@@ -55,13 +56,13 @@ export default function News() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-12 col-sm-12">
+            {/* <div className="col-lg-4 col-md-12 col-sm-12">
               <aside className="default-aside">
                 <div className="sidebar">
                   <SearchWidget />
                 </div>
               </aside>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
