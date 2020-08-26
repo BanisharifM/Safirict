@@ -1,5 +1,5 @@
 import TextC from "components/Global/TextC";
-import Button from "./Button";
+import Button from "../../Global/Button";
 import CardImage from "./CardImage";
 import CardMeta from "./CardMeta";
 import CardTitle from "./CardTitle";

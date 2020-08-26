@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 
-const AboutParallax = () => {
+const ContactParallax = () => {
   return (
     <Parallax
       bgImage={"/images/photos/parallax-counter.jpg"}
@@ -30,4 +30,4 @@ const AboutParallax = () => {
   );
 };
 
-export default AboutParallax;
+export default ContactParallax;

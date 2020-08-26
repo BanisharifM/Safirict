@@ -3,7 +3,7 @@ import CardNews, { INews } from "components/news/CardNews";
 
 const fakeNews: INews[] = [
   {
-    imageSrc: "",
+    imageSrc: "/images/photos/blog/1.jpg",
     month: "شهریور",
     day: "01",
     author: "منتظری",
@@ -13,7 +13,7 @@ const fakeNews: INews[] = [
       "مایکروسافت به‌تازگی اعلام کرد دامنه‌های متعلق به هکرهای روسی که وب‌سایت‌های سنا و دو اندیشکده‌ی آمریکایی دیگر را جعل کرده بودند، از کار انداخته است. ب...",
   },
   {
-    imageSrc: "",
+    imageSrc: "/images/photos/blog/2.jpg",
     month: "شهریور",
     day: "01",
     author: "منتظری",
@@ -23,7 +23,7 @@ const fakeNews: INews[] = [
       "مایکروسافت به‌تازگی اعلام کرد دامنه‌های متعلق به هکرهای روسی که وب‌سایت‌های سنا و دو اندیشکده‌ی آمریکایی دیگر را جعل کرده بودند، از کار انداخته است. ب...",
   },
   {
-    imageSrc: "",
+    imageSrc: "/images/photos/blog/3.jpg",
     month: "شهریور",
     day: "01",
     author: "منتظری",

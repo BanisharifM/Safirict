@@ -1,5 +1,5 @@
 import CardWithImage from "components/Global/CardWithImage";
-import AboutParallax from "components/about/AboutParallax";
+import AboutParallax from "components/Global/ContactParallax";
 import BreadCrumbs from "components/Global/BreadCrumbs";
 import React from "react";
 
