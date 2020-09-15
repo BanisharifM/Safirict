@@ -2897,7 +2897,7 @@ aside.default-aside .sidebar ul li a:hover {
 
 aside.default-aside .sidebar ul li a:after {
   font-family: FontAwesome;
-  content: "\f105";
+  content: "\f104";
   position: absolute;
   right: 30px;
   color: #3b566e;

@@ -6,6 +6,10 @@ export const totalCrumbs: IMenuItem[] = [
       path: "/",
     },
     {
+      title : 'پروژه‌ها',
+      path : '/projects'
+    },
+    {
       title: "حوزه شبکه",
       path: "/network",
     },

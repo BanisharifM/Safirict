@@ -1,38 +1,7 @@
 import BreadCrumbs from "components/Global/BreadCrumbs";
-import CardNews, { INews } from "components/news/CardNews";
+import Card  from "components/Global/Card";
+import { fakeNews } from "utils/constants";
 
-const fakeNews: INews[] = [
-  {
-    imageSrc: "/images/photos/blog/1.jpg",
-    month: "شهریور",
-    day: "01",
-    author: "منتظری",
-    comments: 3,
-    title: "مایکروسافت ۶ دامنه فیشینگ مرتبط با هکرهای روسی را از کار انداخت",
-    content:
-      "مایکروسافت به‌تازگی اعلام کرد دامنه‌های متعلق به هکرهای روسی که وب‌سایت‌های سنا و دو اندیشکده‌ی آمریکایی دیگر را جعل کرده بودند، از کار انداخته است. ب...",
-  },
-  {
-    imageSrc: "/images/photos/blog/2.jpg",
-    month: "شهریور",
-    day: "01",
-    author: "منتظری",
-    comments: 3,
-    title: "مایکروسافت ۶ دامنه فیشینگ مرتبط با هکرهای روسی را از کار انداخت",
-    content:
-      "مایکروسافت به‌تازگی اعلام کرد دامنه‌های متعلق به هکرهای روسی که وب‌سایت‌های سنا و دو اندیشکده‌ی آمریکایی دیگر را جعل کرده بودند، از کار انداخته است. ب...",
-  },
-  {
-    imageSrc: "/images/photos/blog/3.jpg",
-    month: "شهریور",
-    day: "01",
-    author: "منتظری",
-    comments: 3,
-    title: "مایکروسافت ۶ دامنه فیشینگ مرتبط با هکرهای روسی را از کار انداخت",
-    content:
-      "مایکروسافت به‌تازگی اعلام کرد دامنه‌های متعلق به هکرهای روسی که وب‌سایت‌های سنا و دو اندیشکده‌ی آمریکایی دیگر را جعل کرده بودند، از کار انداخته است. ب...",
-  },
-];
 
 export default function News() {
   return (
@@ -49,7 +18,7 @@ export default function News() {
                   {fakeNews.map((item, index) => {
                     return (
                       <div key={index} className="col-lg-4 col-md-6 col-sm-12">
-                        <CardNews {...item} />
+                        <Card {...item} />
                       </div>
                     );
                   })}

@@ -1,18 +1,10 @@
 import TextC from "components/Global/TextC";
-import Button from "../../Global/Button";
-import CardImage from "./CardImage";
-import CardMeta from "./CardMeta";
-import CardTitle from "./CardTitle";
+import Button from "../Button";
+import { INews } from "../models";
+import CardImage from "./Image";
+import CardMeta from "./Meta";
+import CardTitle from "./Title";
 
-export interface INews {
-  imageSrc: string;
-  month: string;
-  day: string;
-  author: string;
-  comments: number;
-  title: string;
-  content: string;
-}
 const index: React.FC<INews> = ({
   imageSrc,
   month,

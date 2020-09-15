@@ -12,6 +12,19 @@ export interface IMenuProps {
 }
 export interface ISocial {
   icon: string;
-  href :string
+  href: string;
 }
 
+export interface INews {
+  imageSrc: string;
+  month: string;
+  day: string;
+  author: string;
+  comments: number;
+  title: string;
+  content: string;
+}
+export interface ICategoryListItem {
+  name: string;
+  count: number;
+}

@@ -1,4 +1,4 @@
-import CardWithImage from "components/Global/CardWithImage";
+import CardWithImage from "components/Global/WideCard";
 import BreadCrumbs from "components/Global/BreadCrumbs";
 
 const index = () => {

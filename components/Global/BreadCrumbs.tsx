@@ -18,6 +18,16 @@ export const BreadCrumbs: React.FC<{ query?: ParsedUrlQuery }> = ({
     }
     return { to: `/${c}`, title: findTitleCrumb(`/${c}`) };
   });
+  const activePath =
+    "/" +
+    pathname
+      .split("/")
+      .filter(
+        (p, i, arr) =>
+          (arr[i + 1] && arr[i + 1].startsWith("[")) || i === arr.length - 1
+      )[0];
+  const title = findTitleCrumb(activePath);
+
   return (
     <Parallax
       bgImage={"/images/photos/parallax-counter.jpg"}
@@ -28,7 +38,7 @@ export const BreadCrumbs: React.FC<{ query?: ParsedUrlQuery }> = ({
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <h1>اخبار</h1>
+                <h1>{title}</h1>
               </div>
               <div className="col-lg-12">
                 <ol className="breadcrumb">

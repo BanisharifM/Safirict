@@ -33,10 +33,7 @@ const SupportAndMaintain = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <SupportItems>نیروی جوان و خلاق</SupportItems>
-                  <a className="btn-home" href="#fh1">
-                    <i className="fa fa-angle-right"></i>
-                    <span></span>
-                  </a>
+                  
                 </div>
               </div>
             </div>

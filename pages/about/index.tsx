@@ -1,4 +1,4 @@
-import CardWithImage from "components/Global/CardWithImage";
+import CardWithImage from "components/Global/WideCard";
 import AboutParallax from "components/Global/ContactParallax";
 import BreadCrumbs from "components/Global/BreadCrumbs";
 import React from "react";
