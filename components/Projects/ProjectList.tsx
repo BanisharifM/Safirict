@@ -8,7 +8,7 @@ interface Props {
   isLoading?: boolean;
   projects: INews[];
 }
-const index: React.FC<Props> = ({ projects, isLoading = false }) => {
+const ProjectList: React.FC<Props> = ({ projects, isLoading = false }) => {
   return (
     <div className="blog-list">
       <Row>
@@ -24,4 +24,4 @@ const index: React.FC<Props> = ({ projects, isLoading = false }) => {
   );
 };
 
-export default index;
+export default ProjectList;

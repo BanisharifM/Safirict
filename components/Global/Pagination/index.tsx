@@ -1,39 +1,69 @@
-import React from "react";
-import UL from "../UL";
-import Item from "./Item";
+import React, { useEffect, useMemo, useState } from "react";
+import {
+  Pagination as BootPagination,
+  PaginationItem,
+  PaginationLink,
+} from "reactstrap";
 
 interface PaginationProps {
-  current: number;
+  defaultValue: number;
   total: number;
   perPage: number;
   onChange: (n: number) => void;
 }
-const index: React.FC<PaginationProps> = ({
-  current,
+const Index: React.FC<PaginationProps> = ({
   total,
+  defaultValue,
   perPage,
   onChange,
 }) => {
-  const pagesCount = total / perPage ? total / perPage : 1;
+  const [current, setCurrent] = useState(defaultValue);
+
+  const pagesCount = useMemo(() => (total / perPage ? total / perPage : 1), []);
+  const handleClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+    const textContent = e.currentTarget.textContent;
+    if (textContent.includes("Previous")) {
+      if (current > 1) {
+        setCurrent((pre) => pre - 1);
+      }
+    } else if (textContent.includes("Next")) {
+      if (current < pagesCount) {
+        setCurrent((pre) => pre + 1);
+      }
+    } else {
+      setCurrent(Number(textContent));
+    }
+  };
+  useEffect(() => {
+    onChange(current);
+  }, [current , onChange]);
   return (
-    <nav>
-      <UL className="pagination justify-content-center">
-        <Item>
-          <span aria-hidden="true">«</span>
-          <span className="sr-only">قبل</span>
-        </Item>
-        {Array(pagesCount)
-          .fill("")
-          .map((_, i) => (
-            <Item>{i+1}</Item>
-          ))}
-        <Item>
-          <span aria-hidden="true">»</span>
-          <span className="sr-only">بعد</span>
-        </Item>
-      </UL>
-    </nav>
+    <BootPagination size="md" listClassName="justify-content-center">
+      <PaginationItem>
+        <PaginationLink first onClick={handleClick} />
+      </PaginationItem>
+      <PaginationItem disabled={current === 1}>
+        <PaginationLink previous onClick={handleClick} />
+      </PaginationItem>
+      {Array(pagesCount)
+        .fill("")
+        .map((_, i) => {
+          return (
+            <PaginationItem active={current === i + 1} key={i}>
+              <PaginationLink onClick={handleClick}>{i + 1}</PaginationLink>
+            </PaginationItem>
+          );
+        })}
+      <PaginationItem disabled={current === pagesCount}>
+        <PaginationLink next onClick={handleClick} />
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink last onClick={handleClick} />
+      </PaginationItem>
+    </BootPagination>
   );
 };
 
-export default index;
+{
+}
+export default Index;

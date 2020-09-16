@@ -16,8 +16,8 @@ const Address = () => {
         <a href="#">gmte.1380@gmail.com</a>
       </p>
       <UL className="social">
-        {socialItems.map((item) => (
-          <SocialItem {...item} />
+        {socialItems.map((item,i) => (
+          <SocialItem key={i} {...item} />
         ))}
       </UL>
     </div>
