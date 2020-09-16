@@ -9,17 +9,25 @@ interface Props {
   projects: INews[];
 }
 const ProjectList: React.FC<Props> = ({ projects, isLoading = false }) => {
+  const projectItems = projects.map((item, index) => {
+    return (
+      <Col key={index} md={6} sm={12}>
+        <Card {...item} />
+      </Col>
+    );
+  });
+  const loadingItems = Array(4)
+    .fill("")
+    .map((_, index) => {
+      return (
+        <Col key={index} md={6} sm={12}>
+          <Loading />
+        </Col>
+      );
+    });
   return (
     <div className="blog-list">
-      <Row>
-        {projects.map((item, index) => {
-          return (
-            <Col key={index} md={6} sm={12}>
-              {isLoading ? <Loading /> : <Card {...item} />}
-            </Col>
-          );
-        })}
-      </Row>
+      <Row>{isLoading ? loadingItems : projectItems}</Row>
     </div>
   );
 };

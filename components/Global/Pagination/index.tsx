@@ -30,13 +30,17 @@ const Index: React.FC<PaginationProps> = ({
       if (current < pagesCount) {
         setCurrent((pre) => pre + 1);
       }
+    } else if (textContent.includes("First")) {
+      setCurrent(1);
+    } else if (textContent.includes("Last")) {
+      setCurrent(pagesCount);
     } else {
       setCurrent(Number(textContent));
     }
   };
   useEffect(() => {
     onChange(current);
-  }, [current , onChange]);
+  }, [current, onChange]);
   return (
     <BootPagination size="md" listClassName="justify-content-center">
       <PaginationItem>

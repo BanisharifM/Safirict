@@ -16,8 +16,8 @@ const Projects: React.FC<PageProps> = ({ data }) => {
   const [projectItems, setProjects] = useState<INews[]>(data);
   const [isLoading, setIsLoading] = useState(false);
   const handleSearch = async (value: string) => {
-    const newProjects = projectItems.filter((item) =>
-      item.title.includes(value)
+    const newProjects = data.filter((item) =>
+      value !== "" ? item.title.includes(value) : true
     );
     setIsLoading(true);
     const res = await fakeDataResolver(newProjects);

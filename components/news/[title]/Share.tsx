@@ -6,8 +6,8 @@ import { socialItems } from "./socialItems";
 const Share = () => {
   return (
     <UL className="share">
-      {socialItems.map((s) => (
-        <SocialItem {...s} />
+      {socialItems.map((s, i) => (
+        <SocialItem key={i} {...s} />
       ))}
     </UL>
   );
