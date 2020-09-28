@@ -5,7 +5,9 @@ import CardImage from "./Image";
 import CardMeta from "./Meta";
 import CardTitle from "./Title";
 
-const index: React.FC<INews> = ({
+type Props = INews & { type: "news" | "projects" };
+const index: React.FC<Props> = ({
+  type,
   imageSrc,
   month,
   day,
@@ -20,7 +22,7 @@ const index: React.FC<INews> = ({
       <CardMeta author={author} comments={comments} />
       <CardTitle title={title} />
       <TextC>{content}</TextC>
-      <Button text="بیشتر" type="primary" />
+      <Button text="بیشتر" type="primary" to={`/${type}/${title}`} />
     </div>
   );
 };

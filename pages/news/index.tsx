@@ -18,7 +18,7 @@ export default function News() {
                   {fakeNews.map((item, index) => {
                     return (
                       <div key={index} className="col-lg-4 col-md-6 col-sm-12">
-                        <Card {...item} />
+                        <Card {...item} type='news' />
                       </div>
                     );
                   })}

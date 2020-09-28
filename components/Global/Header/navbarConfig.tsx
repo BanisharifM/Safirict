@@ -7,18 +7,22 @@ export const navbarItems: IMenuItem[] = [
     title: "خانه",
     path: "/",
   },
+  // {
+  //   title: "خدمات",
+  //   items: [
+  //     {
+  //       title: "حوزه شبکه",
+  //       path: "/",
+  //     },
+  //     {
+  //       title: "دیگر خدمات",
+  //       path: "/",
+  //     },
+  //   ],
+  // },
   {
-    title: "خدمات",
-    items: [
-      {
-        title: "حوزه شبکه",
-        path: "/",
-      },
-      {
-        title: "دیگر خدمات",
-        path: "/",
-      },
-    ],
+    title: "پروژه‌ها",
+    path: "/projects",
   },
   {
     title: "اخبار",

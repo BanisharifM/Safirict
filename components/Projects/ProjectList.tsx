@@ -12,7 +12,7 @@ const ProjectList: React.FC<Props> = ({ projects, isLoading = false }) => {
   const projectItems = projects.map((item, index) => {
     return (
       <Col key={index} md={6} sm={12}>
-        <Card {...item} />
+        <Card type="projects" {...item} />
       </Col>
     );
   });

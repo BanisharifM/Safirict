@@ -4,7 +4,7 @@ import React from "react";
 // import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet-universal";
 L.Icon.Default.imagePath = "/images/Map/";
-const position = [35.64961, 51.166359];
+const position = [32.680159,51.653609];
 export const ContactMap: React.FC = () => {
   return (
     <React.Fragment>

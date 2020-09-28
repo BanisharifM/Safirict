@@ -36,7 +36,7 @@ const Newsitem: React.FC<Props> = ({ url, title, children }) => {
           </a>
         </h3>
         <div className="text">{children}</div>
-        <Button text="بیشتر" type="primary" />
+        <Button text="بیشتر" type="primary" to={`/news/${title}`} />
       </div>
     </div>
   );
