@@ -14,7 +14,7 @@ const Voip = () => {
             data-scroll-reveal-complete="true"
           >
             <img
-              src="/images/photos/features/voip5.png"
+              src="/images/photos/features/voip.jpg"
               className="img-fluid d-block mx-auto"
               alt="App"
             />

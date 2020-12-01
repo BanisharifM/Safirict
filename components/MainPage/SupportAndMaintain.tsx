@@ -47,7 +47,7 @@ const SupportAndMaintain = () => {
             data-scroll-reveal-complete="true"
           >
             <img
-              src="/images/photos/features/blue-4.jpg"
+              src="/images/photos/features/backup&maintain.jpg"
               className="img-fluid d-block mx-auto"
               alt="App"
             />
