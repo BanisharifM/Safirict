@@ -6,18 +6,22 @@ import OurProjects from "components/MainPage/OurProjects";
 import SupportAndMaintain from "components/MainPage/SupportAndMaintain";
 import Voip from "components/MainPage/Voip";
 import Welcome from "components/MainPage/Welcome";
+import Head from "next/head";
 
 export default function Main() {
   return (
-    <div>
-      <Welcome />
-      <Features />
-      <SupportAndMaintain />
-      <Voip />
-      <MainParallax />
-      <OurProjects />
-      <ContactParallax />
-      <News />
-    </div>
+    <>
+      
+      <div>
+        <Welcome />
+        <Features />
+        <SupportAndMaintain />
+        <Voip />
+        <MainParallax />
+        <OurProjects />
+        <ContactParallax />
+        <News />
+      </div>
+    </>
   );
 }

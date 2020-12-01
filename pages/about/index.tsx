@@ -11,7 +11,7 @@ const index = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <CardWithImage url="/images/photos/about/1.jpg">
+              <CardWithImage url="/images/photos/about/about1.jpg">
                 <h2>لورم ایپسوم</h2>
                 <p>
                   لورم ایپسوم یا طرح‌ نما به متنی آزمایشی و بی‌معنی در صنعت چاپ،
@@ -33,7 +33,7 @@ const index = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <CardWithImage url="/images/photos/about/2.jpg" isLeft className='margin-bottom-30'>
+              <CardWithImage url="/images/photos/about/contact.jpg" isLeft className='margin-bottom-30'>
                 <h2>لورم ایپسوم</h2>
                 <p>
                   لورم ایپسوم یا طرح‌ نما به متنی آزمایشی و بی‌معنی در صنعت چاپ،
