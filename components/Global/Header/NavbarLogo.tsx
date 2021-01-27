@@ -4,8 +4,8 @@ const NavbarLogo = () => {
   return (
     <a href="index.html" className="logo">
       <img
-        src="/images/logo-safir2.png"
-        alt="Turing"
+        src="/images/photos/safirlogo.png"
+        alt="logo"
         style={{ width: "27px", height: "29px" }}
       />
       سفیر ارتباطات
