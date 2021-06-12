@@ -8,10 +8,6 @@ export const navbarItems: IMenuItem[] = [
     path: "/",
   },
   {
-    title: "پروژه‌ها",
-    path: "/projects",
-  },
-  {
     title: "اخبار",
     path: "/news",
   },

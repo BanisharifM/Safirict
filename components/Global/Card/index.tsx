@@ -22,7 +22,7 @@ const index: React.FC<Props> = ({
       <CardMeta author={author} comments={comments} />
       <CardTitle title={title} />
       <TextC>{content}</TextC>
-      <Button text="بیشتر" type="primary" to={`/${type}/${title}`} />
+      {/* <Button text="بیشتر" type="primary" to={`/${type}/${title}`} /> */}
     </div>
   );
 };

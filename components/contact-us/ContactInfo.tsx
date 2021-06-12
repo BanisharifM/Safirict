@@ -23,9 +23,11 @@ export const ContactInfo = () => {
             <i className="fa fa-phone"></i>
             <div className="txt">
               <span>
-                031-33389261
+                <span>وب:</span>
+                <span>031-33389260</span>
                 <br />
-                031-33386950
+                <span>شبکه:</span>
+                <span>031-33386950</span>
               </span>
             </div>
           </div>
@@ -35,7 +37,9 @@ export const ContactInfo = () => {
             <i className="fa fa-envelope"></i>
             <div className="txt">
               <span>
-                <a href="mailto:info@yourbrand.com">gmte.1380@gmail.com</a>
+                <a href="mailto:armanexplorer@gmail.com">
+                  armanexplorer@gmail.com
+                </a>
               </span>
             </div>
           </div>

@@ -1,5 +1,5 @@
-import UL from "../UL";
 import SocialItem from "../SocialItem";
+import UL from "../UL";
 import { socialItems } from "./socialItems";
 
 const Address = () => {
@@ -10,13 +10,13 @@ const Address = () => {
         <br />
         ساختمان پارتاک_طبقه اول_واحد2
       </p>
-      <p>تلفن: 03133389261</p>
+      <p>تلفن: 03133389260</p>
       <p>
         <span>ایمیل:</span>
-        <a href="#">gmte.1380@gmail.com</a>
+        <a href="mailto:armanexplorer@gmail.com">armanexplorer@gmail.com</a>
       </p>
       <UL className="social">
-        {socialItems.map((item,i) => (
+        {socialItems.map((item, i) => (
           <SocialItem key={i} {...item} />
         ))}
       </UL>

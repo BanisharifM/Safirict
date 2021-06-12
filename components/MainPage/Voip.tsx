@@ -25,7 +25,7 @@ const Voip = () => {
               <h2 className="section-title">راه اندازی VOIP</h2>
             </div>
             <div className="left-text">
-              <p>
+              <p style={{textAlign : 'justify', textJustify:'inter-word'}}>
                 این مجموعه با بهره گیری از کادری متخصص و پیشرو در تکنولوژی های
                 روز دنیا،امکان راه حل های متنوع در زمینه انتقال صوت وتصویر را
                 فراهم میکند. سیستم ارتباطی voice over IP که به اختصار آن را

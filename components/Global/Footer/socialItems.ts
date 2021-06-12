@@ -1,7 +1,7 @@
 import { ISocial } from "./../models";
 export const socialItems: ISocial[] = [
   {
-    icon: "fa fa-facebook-square",
+    icon: "fa fa-telegram",
     href: "https://t.me/safirict",
   },
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Parallax } from "react-parallax";
 
@@ -15,11 +16,11 @@ const ContactParallax = () => {
                 <div className="info">
                   <p>
                     پروژه ی خود را در زمینه های اجرای شبکه انتقال دیتا ، voip ،
-                    سیستم حفاظت و نظارت تصویر و طراحی سایت و… به ما بسپارید.
+                    سیستم حفاظت و نظارت تصویر و طراحی سایت به ما بسپارید.
                   </p>
-                  <a className="btn-white-line" href="contact.html">
-                    تماس با ما
-                  </a>
+                  <Link href="/contact-us">
+                    <a className="btn-white-line">تماس با ما</a>
+                  </Link>
                 </div>
               </div>
             </div>

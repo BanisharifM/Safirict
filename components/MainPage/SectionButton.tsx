@@ -2,10 +2,9 @@ import React from "react";
 
 const SectionButton: React.FC = ({ children }) => {
   return (
-    <a className="btn-home" href="#fh1">
-      <i className="fa fa-angle-right"></i>
+    <div className="btn-home d-flex justify-content-center" >
       <span>{children}</span>
-    </a>
+    </div>
   );
 };
 

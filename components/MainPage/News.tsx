@@ -1,5 +1,6 @@
+import Card from "components/Global/Card";
 import React from "react";
-import Newsitem from "./Newsitem";
+import { fakeNews } from "utils/constants";
 
 const News = () => {
   return (
@@ -17,8 +18,19 @@ const News = () => {
             </div>
           </div>
         </div>
+        <div className="blog-list">
+          <div className="row">
+            {fakeNews.slice(0,3).map((item, index) => {
+              return (
+                <div key={index} className="col-lg-4 col-md-6 col-sm-12">
+                  <Card {...item} type="news" />
+                </div>
+              );
+            })}
+          </div>
+        </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12">
             <Newsitem
               title="مایکروسافت ۶ دامنه فیشینگ مرتبط با هکرهای روسی را از کار انداخت"
@@ -57,7 +69,7 @@ const News = () => {
               بعضی از این ویژگی ها آشنا شوید.
             </Newsitem>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

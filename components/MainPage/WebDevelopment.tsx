@@ -1,39 +1,35 @@
 import React from "react";
 import SupportItems from "./SectionButton";
 
-const SupportAndMaintain = () => {
+const WebDevelopment = () => {
   return (
     <section className="section padding-bottom-80 colored" id="features">
       <div id="fh1" className="container">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
             <div className="left-heading">
-              <h2 className="section-title">
-                پشتیبانی و نگه داری شبکه های کامپیوتری
-              </h2>
+              <h2 className="section-title">طراحی وبسایت</h2>
             </div>
             <div className="left-text">
               <p style={{textAlign : 'justify', textJustify:'inter-word'}}>
-                این بخش در راستای ارائه خدمات منحصر به فرد، به موقع و با کیفیت
-                به عنوان مجری خدمات پس از فروش کلیه محصولات عرضه شده در واحدهای
-                فروش و با بهره گیری از بروز ترین تجهیزات و با تکیه بر دانش فنی
-                کارشناسان مجرب، در تمامی مراحل پاسخگوی نیاز مشتریان در جهت رفع
-                مشکلات احتمالی محصولات به روش های مختلف می باشد
+                این بخش در سال 1399 و با همت جمعی از نخبگان این عرصه راه‌اندازی
+                شد. تکنولوژی‌هایی که در این بخش مورد توجه است ری‌اَکت، جنگو و
+                وردپرس را در بر می‌گیرد. همچنین پروژه‌هایی که در این بخش توسعه
+                داده شده اند همگی با یک طراحی اختصاصی همراه بوده اند که به سایت
+                یک هویت مستقل می‌دهد و آن را خاص می‌کند.‎
               </p>
-              {/* <!--                        <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.</p>--> */}
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <SupportItems>ارائه مستندات و گزارشات</SupportItems>
+                  <SupportItems>React</SupportItems>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <SupportItems>آنالیز و عیب یابی شبکه</SupportItems>
+                  <SupportItems>Next js</SupportItems>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <SupportItems>بهینه سازی شبکه</SupportItems>
+                  <SupportItems>Django</SupportItems>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <SupportItems>نیروی جوان و خلاق</SupportItems>
-                  
+                  <SupportItems>WordPress</SupportItems>
                 </div>
               </div>
             </div>
@@ -47,7 +43,7 @@ const SupportAndMaintain = () => {
             data-scroll-reveal-complete="true"
           >
             <img
-              src="/images/photos/features/backup&maintain.jpg"
+              src="/images/photos/features/webdesign.jpeg"
               className="img-fluid d-block mx-auto"
               alt="App"
             />
@@ -58,4 +54,4 @@ const SupportAndMaintain = () => {
   );
 };
 
-export default SupportAndMaintain;
+export default WebDevelopment;

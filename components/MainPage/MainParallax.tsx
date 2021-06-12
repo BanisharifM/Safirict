@@ -13,7 +13,7 @@ const MainParallax = () => {
             <div className="row">
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="count-item">
-                  <strong>96</strong>
+                  <strong>132</strong>
                   <span>
                     پروؤه های <br />
                     انجام شده
@@ -22,7 +22,7 @@ const MainParallax = () => {
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="count-item">
-                  <strong>190</strong>
+                  <strong>98%</strong>
                   <span>
                     رضایت
                     <br />
@@ -42,7 +42,7 @@ const MainParallax = () => {
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="count-item">
-                  <strong>46</strong>
+                  <strong>11</strong>
                   <span>
                     پروژه های
                     <br />

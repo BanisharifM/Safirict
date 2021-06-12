@@ -32,9 +32,6 @@ const ProjectCardItem: React.FC<Props> = ({
           </li>
         </ul>
       </div>
-      <div className="pricing-footer">
-        <a href="#">مشاهد پروژه</a>
-      </div>
     </div>
   );
 };
