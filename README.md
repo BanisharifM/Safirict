@@ -1,9 +1,10 @@
-<h1 align="center">
-  <br>
-  <a href="#"><img src="./public/images/logo-safir2.png" alt="Reference Bank" width="200"></a>
-  <br>
-    <h1 align="center">Safirict</h1>
-  <br>
+< align="center">
+<br>
+<a href="#"><img src="./public/images/logo-safir2.png" alt="Reference Bank" width="200"></a>
+<br>
+Safirict
+<br>
+
 </h1>
 
 ![screenshot](./public/images/View.png)
