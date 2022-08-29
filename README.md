@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <br>
+  <a href="#"><img src="./public/images/logo-safir2.png" alt="Reference Bank" width="200"></a>
+  <br>
+  <br>
+</h1>
+
+<h4 align="center">Safirict</h4>
+
+![screenshot](./public/images/View.png)
 
 ## Getting Started
 
