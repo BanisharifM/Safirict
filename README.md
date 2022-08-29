@@ -2,10 +2,9 @@
   <br>
   <a href="#"><img src="./public/images/logo-safir2.png" alt="Reference Bank" width="200"></a>
   <br>
+    <h1 align="center">Safirict</h1>
   <br>
 </h1>
-
-<h4 align="center">Safirict</h4>
 
 ![screenshot](./public/images/View.png)
 
